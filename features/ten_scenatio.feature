@@ -42,7 +42,7 @@ Feature: Check ten functions of the site
     When User clicks List view button
     Then User check view change a list of items visibility
 
-  @test
+  @five
   Scenario Outline: 5 Check that the incorrect username makes an error message visible
     Given User opens homePage page
     And User clicks Xiaomi button
@@ -68,7 +68,7 @@ Feature: Check ten functions of the site
       | inputText |
       | asfdsf    |
 
-
+  @seven
   Scenario: 7 Check that an incorrect quantity makes message ‘Please enter quantity of 1 or more’ visible
     Given User opens homePage page
     And User clicks Xiaomi button

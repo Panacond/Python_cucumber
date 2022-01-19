@@ -1,0 +1,159 @@
+<testsuite name="ten_scenatio.Check ten functions of the site" tests="11" errors="0" failures="0" skipped="0" time="203.831688" timestamp="2022-01-19T11:11:13.846310" hostname="akakiy-GL72-6QD"><testcase classname="ten_scenatio.Check ten functions of the site" name="1 Check the Ebay news page visibility" status="passed" time="5.854315"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @one
+  Scenario: 1 Check the Ebay news page visibility
+    Given User opens homePage page ... passed in 0.000s
+    When User clicks news button ... passed in 0.138s
+    Then User check news list items visibility ... passed in 5.716s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="ten_scenatio.Check ten functions of the site" name="2 Check keyword in results search list visibility -- @1.1 " status="passed" time="3.401614"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: 2 Check keyword in results search list visibility -- @1.1 
+    Given User opens homePage page ... passed in 0.000s
+    When User makes search by keyword cucumber ... passed in 0.153s
+    And User clicks Search button ... passed in 1.979s
+    Then User checks that each item in results list contains keyword "cucumber" visible ... passed in 1.270s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="ten_scenatio.Check ten functions of the site" name="3 Check a list of vacuum cleaners in the price range of $150-350 Xiaomi -- @1.1 " status="passed" time="6.971031"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: 3 Check a list of vacuum cleaners in the price range of $150-350 Xiaomi -- @1.1 
+    Given User opens homePage page ... passed in 0.000s
+    And User clicks Xiaomi button ... passed in 2.186s
+    And User clicks Vacuum cleaners button ... passed in 1.799s
+    When User clicks Price button ... passed in 0.341s
+    And User selects a price range 150-350 ... passed in 1.740s
+    Then User checks prices in the range 150-350 $ ... passed in 0.905s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="ten_scenatio.Check ten functions of the site" name="4 Check change view of the search results of vacuum cleaners list" status="passed" time="6.586815"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @four
+  Scenario: 4 Check change view of the search results of vacuum cleaners list
+    Given User opens homePage page ... passed in 0.000s
+    And User clicks Xiaomi button ... passed in 2.465s
+    And User clicks Vacuum cleaners button ... passed in 1.742s
+    When User clicks View button ... passed in 0.454s
+    When User clicks List view button ... passed in 1.593s
+    Then User check view change a list of items visibility ... passed in 0.333s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="ten_scenatio.Check ten functions of the site" name="5 Check that the incorrect username makes an error message visible -- @1.1 " status="passed" time="83.485696"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @five
+  Scenario Outline: 5 Check that the incorrect username makes an error message visible -- @1.1 
+    Given User opens homePage page ... passed in 0.000s
+    And User clicks Xiaomi button ... passed in 2.075s
+    And User clicks Vacuum cleaners button ... passed in 1.793s
+    And User clicks first list item ... passed in 64.864s
+    And User clicks Add to Watchlist button ... passed in 2.688s
+    When User types Alex in input field ... passed in 0.128s
+    And User clicks Continue button ... passed in 0.079s
+    Then User checks Error message ... passed in 11.858s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="ten_scenatio.Check ten functions of the site" name="6 Check that an incorrect search makes message ‘No exact matches found’ visible -- @1.1 " status="passed" time="2.276901"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: 6 Check that an incorrect search makes message ‘No exact matches found’ visible -- @1.1 
+    Given User opens homePage page ... passed in 0.000s
+    When User makes search by keyword asfdsf ... passed in 0.151s
+    And User clicks Search button ... passed in 2.032s
+    Then User checks that message No exact matches found visible ... passed in 0.094s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="ten_scenatio.Check ten functions of the site" name="7 Check that an incorrect quantity makes message ‘Please enter quantity of 1 or more’ visible" status="passed" time="71.54694"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @seven
+  Scenario: 7 Check that an incorrect quantity makes message ‘Please enter quantity of 1 or more’ visible
+    Given User opens homePage page ... passed in 0.000s
+    And User clicks Xiaomi button ... passed in 2.051s
+    And User clicks Vacuum cleaners button ... passed in 1.619s
+    And User clicks first list item ... passed in 67.372s
+    When User clicks Quantity field ... passed in 0.341s
+    And User inputs value 0 ... passed in 0.112s
+    Then User checks message "Please enter quantity of 1 or more" visibility ... passed in 0.052s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="ten_scenatio.Check ten functions of the site" name="8 Check keyword in results search list on Vacuum cleaners page -- @1.1 " status="passed" time="7.966528"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: 8 Check keyword in results search list on Vacuum cleaners page -- @1.1 
+    Given User opens homePage page ... passed in 0.000s
+    And User clicks Xiaomi button ... passed in 2.290s
+    And User clicks Vacuum cleaners button ... passed in 1.648s
+    When User in Vacuum cleaners page makes search by keyword vacuum and presses ENTER ... passed in 2.520s
+    Then User checks list items contain Vacuum on Vacuum cleaners page ... passed in 1.509s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="ten_scenatio.Check ten functions of the site" name="9 Check error message ‘Please provide a valid price range’ when type text in price range -- @1.1 " status="passed" time="3.00478"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: 9 Check error message ‘Please provide a valid price range’ when type text in price range -- @1.1 
+    Given User opens homePage page ... passed in 0.000s
+    When User makes search by keyword cucumber ... passed in 0.153s
+    And User clicks Search button ... passed in 2.510s
+    When User inputs text asd in minimum price field ... passed in 0.281s
+    Then User checks that message "Please provide a valid price range" visible ... passed in 0.060s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="ten_scenatio.Check ten functions of the site" name="10 Check selected keyword in results search list visibility -- @1.1 " status="passed" time="6.191468"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @work
+  Scenario Outline: 10 Check selected keyword in results search list visibility -- @1.1 
+    Given User opens homePage page ... passed in 0.000s
+    When User makes search by keyword cucumber ... passed in 0.162s
+    And User clicks Search button ... passed in 2.204s
+    And User clicks Tomato select button ... passed in 3.793s
+    Then User checks that each item in results list contains keyword Tomato visible ... passed in 0.032s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="ten_scenatio.Check ten functions of the site" name="10 Check selected keyword in results search list visibility -- @1.2 " status="passed" time="6.545599"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @work
+  Scenario Outline: 10 Check selected keyword in results search list visibility -- @1.2 
+    Given User opens homePage page ... passed in 0.000s
+    When User makes search by keyword cucumber ... passed in 0.152s
+    And User clicks Search button ... passed in 2.561s
+    And User clicks Lettuce select button ... passed in 3.722s
+    Then User checks that each item in results list contains keyword Lettuce visible ... passed in 0.110s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

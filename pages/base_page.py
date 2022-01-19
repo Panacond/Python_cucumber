@@ -13,6 +13,6 @@ class BasePage(PageFactory):
     def implicitly_wait(self, seconds):
         self.driver.implicitly_wait(seconds)
 
-    def waitVisibilityOfElement(self, second, element):
+    def wait_visibility_of_element(self, second, element):
         wait = WebDriverWait(self.driver, second)
         wait.until(expected_conditions.element_to_be_clickable((By.XPATH, element)))
